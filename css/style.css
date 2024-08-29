@@ -1,0 +1,148 @@
+
+header{
+    background:  #2d4057;
+    position: fixed;
+    width:100%; 
+    top:0;
+}
+navbar{margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+
+}
+navbar a {color:white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 25px;
+
+}
+navbar a:hover{color:#7fffd4;
+text-decoration: underline 1px;
+}
+*{box-sizing: border-box;}
+
+body{margin: 0;
+
+font-size: 17px;
+}
+main{min-height: 100vh;}
+
+footer{min-height:  100px;
+background: #2d4057;
+text-align: center;
+color:white;
+padding-top: 35px;
+
+}
+p{
+   line-height: 150%; 
+   text-indent: 30px;
+   font-size: 25px;
+}
+li{
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 40px;
+    list-style-image: linear-gradient(#fa9483,#fa9483);
+}
+h1,h2,h3,h4,h5,h6 {font-family: 'Times New Roman', Times, serif, cursive;
+margin-top: 0;}
+
+h1{font-size:300%}
+
+h2{font-size:250%;
+text-align: center; }
+
+section{padding: 90px 15%;
+}
+
+.logo{height:50px}
+#index{
+    background:url('../images/pozascolii.jpeg');
+   background-size: cover;
+    min-height: 100vh;
+   
+
+}
+.index-info{
+margin-top: 1vh;
+text-align: center
+}
+.index-info h1 {
+    font-size: 350%;
+    color: black;
+
+}
+.centered{
+    text-align: center;
+}
+.harta{
+    width: 100%;
+    height: 40vh;
+    border: 2px;
+    border-radius: 5px;
+}
+.row{
+    overflow: auto;
+}
+[class^="col-"]{
+    float: left;
+    padding: 0px 10px;
+}
+.col-80{
+        width: 50%;
+        float: left;
+        padding: 0px 10px;
+    }
+.contacte, .cform{
+    border: 2px solid #f3deca;
+    border-radius: 5px;
+    background-color: #f7f2ed;
+    padding: 5px 5%;
+    height: 325px;
+}
+
+.cform input, .cform textarea{
+width: 100%;
+font-size: 15px;
+font-family: inherit;
+margin-bottom: 10px;
+padding: 4px 6px;
+}
+#hamburger{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 800px) {
+    section{
+        padding: 90px 10px;
+    }
+
+.index-info h1{
+    font-size: 250%;
+}
+.vframe{height: 55vw;}
+[class^="col-"]{
+   width: 100%;
+}
+    navbar a {
+        display: none;
+    }
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    navbar {
+        display: block;
+    }
+    #hamburger{
+        display: block;
+    }
+}
